@@ -1,37 +1,36 @@
-name: Generate Datas
+name: Generate arcade animation
 
 on:
-  schedule:
-    - cron: "0 */24 * * *"
+  schedule: # execute every 12 hours
+    - cron: "0 */12 * * *"
+
   workflow_dispatch:
+
   push:
     branches:
       - main
 
 jobs:
-  build:
-    name: Jobs to update datas
-    runs-on: ubuntu-latest
+  generate:
     permissions:
       contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate the snake files
-        uses: Platane/snk@v3
-        id: snake-gif
+      - name: generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
         with:
-          github_user_name: darligi
-          color: Pacman
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          github_user_name: ${{ github.repository_owner }}
+          games: 'pacman'
 
-      - name: Push github-contribution-grid-snake.svg to the output branch
+      - name: push pacman-contribution-graph.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output
+          target_branch: pacman-output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

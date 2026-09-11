@@ -1,46 +1,9 @@
-<h1 align="center">Hey 👋 What's Up?</h1>
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,nodejs,express,python,mysql,mongodb,git,github,vscode,termux,linux" alt="Tech Stack Icons" />
-</div>
-
----
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=darligi&theme=tokyonight&hide_border=true&background=121212" alt="GitHub Streak Stats" />
-</div>
-
----
-
-<div align="center">
-  <h3>🏆 Trophies</h3>
-  <img src="https://github-profile-trophy.vercel.app/?username=darligi&theme=tokyonight&no-bg=true&margin-w=5&margin-h=5" alt="GitHub Trophies" />
-</div>
-
----
-
-<div align="center">
-  <h3>🕹️  Pac-Man Game</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/darligi/darligi/output/github-contribution-grid-snake-dark.svg">
-    <img alt="github contribution grid pacman animation" src="https://raw.githubusercontent.com/darligi/darligi/output/github-contribution-grid-snake.svg">
-  </picture>
-</div>
-
----
-
-<div align="center">
-  <h3>🌐 Connect With Me</h3>
-  <a href="https://github.com/darligi" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://tiktok.com/@username" target="_blank">
-    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/username" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://t.me/username" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>
-</div>
+- name: Generate the snake files
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: darligi
+          color: Pacman
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark

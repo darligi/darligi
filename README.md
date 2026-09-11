@@ -406,19 +406,19 @@
 ---
 
 <div align="center">
-  <a href="https://linkedin.com/in/username" target="_blank">
+  <a href="https://linkedin.com/in/username" target="darligi">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/username" target="_blank">
+  <a href="https://twitter.com/username" target="darligi">
     <img src="https://img.shields.io/badge/TWITTER-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://discord.com" target="_blank">
+  <a href="https://discord.com" target="darligi">
     <img src="https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
-  <a href="https://twitch.tv" target="_blank">
+  <a href="https://twitch.tv" target="darligi">
     <img src="https://img.shields.io/badge/TWITCH-9146FF?style=for-the-badge&logo=twitch&logoColor=white" alt="Twitch" />
   </a>
-  <a href="https://dev.to" target="_blank">
+  <a href="https://dev.to" target="darligi">
     <img src="https://img.shields.io/badge/DEV.TO-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" alt="Dev.to" />
   </a>
 </div>
